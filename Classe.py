@@ -35,13 +35,15 @@ class Eleve(Dossier):
 
 
 # Exemple d'utilisation
-prof = Professeur("Mme Dupont", "dupont@example.com", "Mathématiques")
+prof = Professeur("Mme Marie", "Femme", "Mathématiques")
 classe = Classe(prof)
 
-eleve1 = Eleve("Jean Dupuis", "jean@example.com")
-eleve2 = Eleve("Marie Curie", "marie@example.com")
+eleve1 = Eleve("Jean Dupuis", "Homme")
+eleve2 = Eleve("Francois Curie", "Homme")
+eleve3 = Eleve("Jean René", "Femme")
 
 classe.ajouter_eleve(eleve1)
 classe.ajouter_eleve(eleve2)
+classe.ajouter_eleve(eleve3)
 
 print(classe.afficher_classe())
